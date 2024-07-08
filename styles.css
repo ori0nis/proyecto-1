@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(./assets/background-8.png);
+  opacity: 0.75;
+}
