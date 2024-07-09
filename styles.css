@@ -1,3 +1,8 @@
+:root {
+  --pastel-color: #fec7d7;
+  --main-background: #f9f8fc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,4 +12,14 @@ body {
 html {
   background-image: url(./assets/background-8.png);
   opacity: 0.75;
+}
+
+header {
+  background-color: var(--pastel-color);
+  border: 1px black solid;
+}
+
+.cards {
+  background-color: var(--main-background);
+  border: 1px black solid;
 }
