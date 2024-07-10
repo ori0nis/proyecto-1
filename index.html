@@ -13,133 +13,173 @@
     <meta
       keywords="cake, dessert, sweets, birthday, happy birthday, party, anniversary, celebrate"
     />
-    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="icon" href="./assets/logos/favicon.png" />
     <title>Taste the Rainbow Cakes</title>
 </head>
 <body>
   <header>
-    <img src="./assets/logo.png" alt="Taste the Rainbow logo" title="Taste the Rainbow logo">
+    <img src="./assets/logos/logo.png" alt="Taste the Rainbow logo" title="Taste the Rainbow logo">
     <label for="search">
       <input id="search" type="search" name="search" placeholder="Search your item..." />
     </label>
     <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook-icon.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.tiktok.com" target="_blank"><img src="./assets/tiktok-icon.png" alt="TikTok"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./assets/logos/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com" target="_blank"><img src="./assets/logos/tiktok-icon.png" alt="TikTok"></a>
   </div>
   </header>
+  <div class="page-title">
+  <h1>Taste the Rainbow Cakes</h1>
+</div>
   <aside class="sidebar">
     <nav>
       <ul>
-        <li>Cakes</li>
-        <li>Cake Pops</li>
-        <li>Ice Cream Cakes</li>
-        <li>Bundles</li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#cupcakes">Cupcakes</a></li>
+        <li><a href="#macarons">Macarons</a></li>
+        <li><a href="#tower">Macaron Towers</a></li>
       </ul>
     </nav>
   </aside>
+<!-- He intentado ser ambiciosa con este select y en principio le había dado links igual que al nav, pero no funcionaban y he preferido dejarlo como está-->
+  <label for="hiddenselect">
+    <select id="hiddenselect" placeholder="Select your item">
+      <option value="cakes">Cakes</option>
+      <option value="cupcakes">Cupcakes</option>
+      <option value="macarons">Macarons</option>
+      <option value="tower">Macaron Towers</option>
+    </select>
+    </label>
   <main>
-    <h1 class="page-title">Taste the Rainbow Cakes</h1>
+    <!-- Las fotos de las cartas son de aquí: https://ohmycake.co.za/product-category/cakes/ he añadido lo de rel="noopener" pero parece que no funciona-->
     <section class="cards">
-      <article class="card grid-container">
-        <img src="#">
-        <h3>Product Name</h3>
+      <a href="https://ohmycake.co.za/product/lavish-rose-gold-cake/" rel="noopener" target="_blank">
+      <article id="cakes" class="card grid-container">
+        <img src="./assets/products/cake-1.jpg">
         <div class="grid-container">
-            <p>$</p>
+          <h3>Rose Cake</h3>
+            <p>From $20.99</p>
             <button>Buy now</button>
         </div>
     </article>
+  </a>
+  <a href="https://ohmycake.co.za/product/daddy-cool-cake/" rel="noopener" target="_blank">
     <article class="card grid-container">
-      <img src="#">
-      <h3>Product Name</h3>
+      <img src="./assets/products/cake-2.jpg">
       <div class="grid-container">
-          <p>$</p>
+        <h3>Daddy Cool Cake</h3>
+          <p>From $25.99</p>
           <button>Buy now</button>
       </div>
   </article>
+</a>
+<a href="https://ohmycake.co.za/product/cutesy-cartoon-cake/" rel="noopener" target="_blank">
   <article class="card grid-container">
-    <img src="#">
-    <h3>Product Name</h3>
+    <img src="./assets/products/cake-3.jpg">
     <div class="grid-container">
-        <p>$</p>
+      <h3>Cartoony Cake</h3>
+        <p>From $27.99</p>
         <button>Buy now</button>
     </div>
 </article>
-<article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+</a>
+<a href="https://ohmycake.co.za/product/caramel-pop-cupcake/" rel="noopener" target="_blank">
+<article id="cupcakes" class="card grid-container">
+  <img src="./assets/products/cupcake-1.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Caramel Cupcake</h3>
+      <p>$2.50</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/mothers-day-flourish-cupcake/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/cupcake-2.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Mother's Day Flourish</h3>
+      <p>$2.50</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/dads-espresso-cupcake/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/cupcake-3.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Espresso Cupcake</h3>
+      <p>$2.50</p>
       <button>Buy now</button>
   </div>
 </article>
-<article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+</a>
+<a href="https://ohmycake.co.za/product/classic-rainbow-macarons/" rel="noopener" target="_blank">
+<article id="macarons" class="card grid-container">
+  <img src="./assets/products/macaron-1.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Rainbow Macarons</h3>
+      <p>From $1.70</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/best-ever-brownie-macaron/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/macaron-2.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Brownie Macarons</h3>
+      <p>From $1.70</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/love-sprinkle-macaron/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/macaron-3.jpg">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Love Bite Macarons</h3>
+      <p>From $1.70</p>
       <button>Buy now</button>
   </div>
 </article>
-<article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+</a>
+<a href="https://ohmycake.co.za/product/classic-macaron-tower/" rel="noopener" target="_blank">
+<article id="tower" class="card grid-container">
+  <img src="./assets/products/tower-1.png">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Classic Macaron Tower</h3>
+      <p>$17.99</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/ivory-macaron-tower/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/tower-2.png">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Ivory Macaron Tower</h3>
+      <p>$18.99</p>
       <button>Buy now</button>
   </div>
 </article>
+</a>
+<a href="https://ohmycake.co.za/product/pastel-macaron-tower-2/" rel="noopener" target="_blank">
 <article class="card grid-container">
-  <img src="#">
-  <h3>Product Name</h3>
+  <img src="./assets/products/tower-3.png">
   <div class="grid-container">
-      <p>$</p>
+    <h3>Small Macaron Tower</h3>
+      <p>$13.99</p>
       <button>Buy now</button>
   </div>
 </article>
-    </section>
-    <section class="delivery">
-      <h2>Want yours for delivery?</h2>
+</a>
+    </sect>
+  </main>
+  <div class="delivery-title">
+    <h2>Want yours for delivery?</h2>
+  </div>
+    <section>
+      <div class="delivery">
       <form method="post"
       action="/"
       id="delivery-form"
@@ -149,18 +189,18 @@
           <legend>Select your product</legend>
           <label for="product-select">
             <select id="product-select">
-              <option value="cake-1">Cake 1</option>
-              <option value="cake-2">Cake 2</option>
-              <option value="cake-3">Cake 3</option>
-              <option value="cakepop-1">Cake Pop 1</option>
-              <option value="cakepop-2">Cake Pop 2</option>
-              <option value="cakepop-3">Cake Pop 3</option>
-              <option value="icecake-1">Ice Cream Cake 1</option>
-              <option value="icecake-2">Ice Cream Cake 2</option>
-              <option value="icecake-3">Ice Cream Cake 3</option>
-              <option value="bundle-1">Bundle 1</option>
-              <option value="bundle-2">Bundle 2</option>
-              <option value="bundle-3">Bundle 3</option>
+              <option value="cake-1">Rose Cake</option>
+              <option value="cake-2">Daddy Cool Cake</option>
+              <option value="cake-3">Cartoony Cake</option>
+              <option value="cupcake-1">Caramel Cupcake</option>
+              <option value="cupcake-2">Mother's Day Flourish</option>
+              <option value="cupcake-3">Espresso Cupcake</option>
+              <option value="macaron-1">Rainbow Macarons</option>
+              <option value="macaron-2">Brownie Macarons</option>
+              <option value="macaron-3">Love Bite Macarons</option>
+              <option value="tower-1">Classic Macaron Tower</option>
+              <option value="tower-2">Ivory Macaron Tower</option>
+              <option value="tower-3">Small Macaron Tower</option>
             </select>
           </label>
           <legend>Enter your address</legend>
@@ -180,7 +220,7 @@
             <input id="email" type="email" name="email" placeholder="email address" required>
         </label>
         <label for="phonenumber">
-          <input id="phonenumber" type="number" name="phonenumber" placeholder="phone number" required>
+          <input id="phonenumber" type="text" name="phonenumber" placeholder="phone number" required>
       </label>
       <legend>Do you have any special requests?</legend>
       <label for="request">
@@ -188,17 +228,17 @@
         cols="50"
         placeholder="(allergies, dietary restrictions, preferences...)"></textarea>
       </label>
-      <button type="submit">Submit</button>
         </fieldset>
+        <button type="submit" name="submit" value="submit">Submit</button>
       </form>
+    </div>
     </section>
-  </main>
   <footer>
     <ul>
       <li>Contact</li>
       <li>About</li>
       <li>FAQ</li>
-      <li>Want to work with us?</li>
+      <li>Work with us</li>
     </ul>
     <i>Copyright: Taste the Rainbow Cakes (c) 2024</i>
   </footer>
